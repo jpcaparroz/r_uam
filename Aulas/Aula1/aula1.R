@@ -118,3 +118,63 @@ m1['LA1','Homens'] #pesquisando na matriz
 
 rbind(m1, m2) #junção de matrizes (por linhas)
 cbind(m1,m2) #junção de matriz (por colunas)
+
+
+
+# Listas
+listaChar <- list('A','B','C')
+listaChar2 <- list(c('A','A'),'B', 'C') #lista com vetor
+listaChar2
+
+listaChar3 <- list(matrix(c('A','A','A','A'),nr=2),'B','C') #lista com matriz e vetor
+listaChar3
+
+listaInt <- list(1,2,3)
+listaInt
+
+listaNum <- list(2.12,4.23,93.123)
+listaNum
+
+listaComplex <- list(1+4.1,9+2i)
+listaComplex
+
+listBool <- list(T,F,T,F)
+listBool
+
+listaComp <- list(c('Joao','Pedro'), 1.76, 92)
+listaComp
+listaComp[1]
+listaComp[c(1,2)]
+listaComp[[2]][1]
+
+
+names(listaComp) <- c('Nome', 'Altura', 'Peso')
+
+listaComp$Nome
+length(listaComp$Nome)
+
+mode(listaComp$Nome) #verificando tipo de dados da lista
+
+vetor1 <- c(1,2,3)
+
+listaVetor <- as.list(vetor1) #transformando vetor em lista
+listaVetor
+
+vetor2 <- c('Joao','Paulo', 'Carla')
+
+pesquisa <- data.frame(vetor2, vetor1)
+pesquisa
+
+vetor3 <- c('legal','chato','medio')
+pesquisa2 <- cbind(pesquisa, vetor3)
+pesquisa2
+
+
+dim(pesquisa2) #elementos no dataframe
+length(pesquisa2)
+str(pesquisa2)
+
+pesquisa2$vetor2
+
+nrow(pesquisa2)
+
