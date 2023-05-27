@@ -181,5 +181,16 @@ library(e1071)
 resultado = skewness(dados)
 resultado
 
+# Coeficiente de Curtose
+CK = kurtosis(dados)
+CK
+
+
+
+
+
+
+
+
 
 
